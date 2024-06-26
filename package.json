@@ -1,17 +1,17 @@
 {
-  "scripts": {
-        "test": "mocha tests",
-        "start-fe": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
-        "start": "cd server && node server.js",
-        "tests:ui": "npx playwright test tests/ui.test.js --ui",
-        "tests": "npx playwright test api.test.js",
-        "test-npm-security": "npm audit"
-    },
   "dependencies": {
     "body-parser": "^1.20.2",
     "chai": "^4.4.0",
     "chai-http": "^4.4.0",
     "express": "^4.19.2",
     "mocha": "^10.4.0"
-  }
+  },
+  "scripts": {
+        "test": "mocha tests",
+        "start-fe": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
+        "start": "node server.js",
+        "tests:ui": "npx playwright test api.test.js --ui",
+        "tests": "npx playwright test api.test.js",
+        "test-npm-security": "npm audit"
+    }
 }
