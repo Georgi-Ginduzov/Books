@@ -7,11 +7,8 @@
     "mocha": "^10.4.0"
   },
   "scripts": {
-        "test": "mocha tests",
-        "start-fe": "http-server -a localhost -p 3000 -P http://localhost:3000? -c-1",
+        "test": "npx mocha api.test.js",
         "start": "node server.js",
-        "tests:ui": "npx playwright test api.test.js --ui",
-        "tests": "npx playwright test api.test.js",
         "test-npm-security": "npm audit"
     }
 }
